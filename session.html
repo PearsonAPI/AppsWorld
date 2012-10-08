@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2011 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Chrome DevRel Team (chrome-devrel@googlegroups.com)
+                 Alex Russell (slightlyoff@chromium.org)
+                 Brad Neuberg
+-->
+
+<!-- GB: modifications for s9 template pack:
+ 
+  o removed offline manifest
+  o removed disclaimer; it's just a prototype anyway
+  o removed google analytics script code
+  o removed google maps script code
+  o removed all slides
+
+  o in js/utils.js changed line 541pp queryAll('.transitionSlide')
+ 
+     - looks for h1 (not h2) and doesn't include img (icon)
+
+  o in styles/commons.css commented out rules for li and bullets
+ 
+   li {
+    list-style: none;
+    padding: 10px 0;
+   }
+   .bullets {
+  font-size: 40px;
+  }
+  .bullets li::before {
+    content: '· ';
+  }
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <title>Your Title Here</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
+    <link id="prettify-link" href="src/prettify/prettify.css" rel="stylesheet" disabled />
+    <link href="styles/fonts.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="styles/presentation.css" rel="stylesheet" type="text/css" media="screen" />
+<!--
+    <link href="styles/common.css" rel="stylesheet" type="text/css" media="screen" />
+    <link class="theme" href="styles/default.css" rel="stylesheet" type="text/css" media="screen" />
+    <link class="theme" href="styles/moon.css" rel="stylesheet" type="text/css" media="screen" />
+    <link class="theme" href="styles/sand.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link class="theme" href="styles/sea_wave.css" rel="stylesheet" type="text/css" media="screen"/> -->
+  </head>
+  <body>
+    <div id="flex-container">
+    <nav id="helpers">
+      <button title="Previous slide" id="nav-prev" class="nav-prev">&#8701;</button> 
+      <button title="Jump to a random slide" id="slide-no">5</button> 
+      <button title="Next slide" id="nav-next" class="nav-next">&#8702;</button>
+      <menu>
+        <button type="checkbox" data-command="toc" title="Table of Contents" class="toc">TOC</button>
+        <!-- <button type="checkbox" data-command="resources" title="View Related Resources">&#9734;</button> -->
+        <button type="checkbox" data-command="notes" title="View Slide Notes">&#9999;</button>
+        <button type="checkbox" data-command="source" title="View slide source">&#8635;</button>
+        <button type="checkbox" data-command="help" title="View Help">?</button>
+      </menu>
+    </nav>
+    <div class="slides">
+      <div id="presentation-counter">Loading...</div>
+
+        
+        <div class="slide transitionSlide" id="slide1">
+          <header><h1>Pearson API</h1></header>
+          <section>
+              
+<!-- _S9SLIDE_ -->
+<h1>Pearson API</h1>
+<div>
+<p><img style="width:50%;padding:1em 0em 0em 0em;" src="pearsonapi.png"/>
+<h2 style="position:relative;padding:0.7em 3em 0em 3em;margin-top:0em;text-align:center">Providing quality digital content for developers</h2></p>
+</div>
+<p align="center"><em>Dan Murphy</em></p>
+<p align="center"><em>@PearsonAPI</em></p>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide2">
+          <header><h1>First wave</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>First wave</h1>
+<ul>
+	<li>DK Eyewitness Travel Guides</li>
+	<li>Longman Dictionary of Contemporary English</li>
+	<li>FT Press
+<table style="border:none;margin-left:1em"/>
+<tr style="border:none">
+<td style="border:none"><img src="dk.png"/></td>
+<td style="border:none"><img src="longman.png"/></td>
+<td style="border:none"><img src="ft-press.png"/></td>
+</tr>
+</table></li>
+</ul>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide3">
+          <header><h1>Earlier in 2012</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Earlier in 2012</h1>
+<ul>
+	<li>Pearson Kitchen Manager</li>
+	<li>Nursing and Health Survival Guides</li>
+	<li>Visual QuickStart Guides
+<table style="border:none;margin-left:0em;position:relative;left:-1em">
+<tr style="border:none;margin-left:0em">
+<td style="border:none;width:70%"><img src="pkm.png"/>
+<img style="width:100%" src="vqs.jpg"/></td>
+<td style="border:none;width:25%"><img style="width:100%" src="dental-nurse.png"/></td>
+</tr>
+</table></li>
+</ul>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide4">
+          <header><h1>Just Released</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Just Released</h1>
+<h2>DK Images</h2>
+<ul>
+	<li>Over 90 000 photographs and drawings</li>
+	<li>Discover using keywords or captions</li>
+	<li>Optimised for multiple devices</li>
+</ul>
+<p><img src="dk-images.png" alt="" /></p>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide5">
+          <header><h1>Why ?</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Why ?</h1>
+<h2>Evolution of content</h2>
+<ul>
+	<li>Growth of devices and uses</li>
+	<li>Increase satisfaction, reach &amp; sales</li>
+</ul>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide6">
+          <header><h1>Remove barriers</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Remove barriers</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<blockquote>
+<p><em>Invention comes in many forms and at many scales.</em></p>
+</blockquote>
+<blockquote>
+<p><em>The most radical and transformative of inventions are often those that empower others to unleash their creativity, to pursue their dreams</em></p>
+</blockquote>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide7">
+          <header><h1>Hackathons</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Hackathons</h1>
+<p><img src="hackathon.JPG" style="height:60%;top-margin:2em"/></p>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide8">
+          <header><h1>Tasteful Movies</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Tasteful Movies</h1>
+<ul>
+	<li>Jeff Olchovy and Nate Faubion from Flow</li>
+	<li><em>Netflix and Pearson Kitchen Manager APIs</em></li>
+</ul>
+<table style="border:none;margin-left:3.5em;margin-top:0em;margin-bottom:0em;position:relative;top:-2em">
+<tr style="border:none">
+<td style="border:none"><img src="sc-tastefulmovies1.png" style="height:70%"/></td>
+<td style="border:none"><img src="sc-tastefulmovies2.png" style="height:70%"/></td>
+</tr>
+</table>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide9">
+          <header><h1>Radio Active</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Radio Active</h1>
+<ul>
+	<li>Paras Jain (<em>high school student</em>)</li>
+	<li><em>Longman Dictionary</em></li>
+</ul>
+<p><img src="sc-radioactive.png" style="float:right;top:-5em;position:relative"/></p>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide10">
+          <header><h1>Spotlist</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Spotlist</h1>
+<ul>
+	<li>Pietro &amp; Alvise from 50pixels.com</li>
+	<li><em>Eyewitness Travel and Google APIs</em></li>
+</ul>
+<table style="border:none;margin-left:3.5em;margin-top:0em;margin-bottom:0em;position:relative;top:-2em">
+<tr style="border:none">
+<td style="border:none"><img src="sc-spotlist1.png" style="height:40%"/></td>
+<td style="border:none"><img src="sc-spotlist2.png" style="height:40%"/></td>
+</tr>
+</table>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide11">
+          <header><h1>Pearson Kitchen Manager</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Pearson Kitchen Manager</h1>
+<ul>
+	<li>Internal project with FuturePlatforms.com</li>
+	<li><em>Pearson Kitchen Manager and a speech SDK</em></li>
+</ul>
+<table style="border:none; margin-left:5em; margin-top:0em; margin-bottom:0em; position:relative; top:-2em">
+<tr style="border:none">
+<td style="border:none"><img src="sc-pkm1.jpg" style="height:47.2%"/></td>
+<td style="border:none"><img src="sc-pkm2.jpg" style="height:33%"/></td>
+</tr>
+</table>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide12">
+          <header><h1>Code sample</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Code sample</h1>
+<h2>JavaScript &amp; jQuery</h2>
+<pre><code>  url = "https://api.pearson.com/dk/v1/images";
+  apikey = "0123456789ABCDEFEDCBA9876543210";
+  criteria = {keywords: feline, limit: 50};
+  images = function (url, criteria, data_handler) {
+  data = jQuery.extend({apikey: apikey, limit:100}, criteria);
+  jQuery.ajax( url,
+    {
+      data: data,
+      dataType: 'jsonp',
+      jsonp: "jsonp",
+      success: function(data,status,xhr) {
+                 data_handler(data);
+                }
+    }
+}</code></pre>
+
+          </section>
+        </div>
+        <div class="slide transitionSlide" id="slide14">
+          <header><h1>Getting Started</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Getting Started</h1>
+<h2>Three Steps</h2>
+<p><img src="website.png" style="float:right; position: relative; height:50%; top:-4em"/></p>
+<ol>
+	<li>Choose</li>
+	<li>Register</li>
+	<li>Code</li>
+</ol>
+
+
+          </section>
+        </div>
+        
+        <div class="slide transitionSlide" id="slide15">
+          <header><h1>Learn more</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+<h1>Learn more</h1>
+<h2>Come along for a hands-on tutorial</h2>
+<ul>
+	<li>Code a game in 30 mins</li>
+</ul>
+<h2>Web resources</h2>
+<ul>
+	<li>developer.pearson.com</li>
+	<li>@PearsonAPI</li>
+	<li>api-developer@pearson.com</li>
+</ul>
+          </section>
+        </div>
+        
+
+
+        <div id="speaker-note" class="invisible" style="display: none;"></div>
+        <aside id="help" class="sidebar invisible" style="display: none;">
+          <table>
+            <caption>Help</caption>
+            <tbody>
+              <tr>
+                <th>Move Around</th>
+                <td>&larr;&nbsp;&rarr;</td>
+              </tr>
+              <tr>
+                <th>Source File</th>
+                <td>s</td>
+              </tr>
+              <tr>
+                <th>Change Theme</th>
+                <td>t</td>
+              </tr>
+              <tr>
+                <th>Syntax Highlight</th>
+                <td>h</td>
+              </tr>
+              <tr>
+                <th>Speaker Notes</th>
+                <td>n</td>
+              </tr>
+              <tr>
+                <th>Toggle 3D</th>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>Help</th>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </aside>
+
+    </div> <!-- slides -->
+    </div>
+    
+    <!--[if lt IE 9]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">
+    </script>
+    <script>CFInstall.check({ mode: "overlay" });</script>
+    <![endif]-->
+
+    <script src="src/prettify/prettify.js" onload="prettyPrint();" defer></script>
+    <script src="js/utils.js"></script>
+  </body>
+</html>
